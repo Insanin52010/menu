@@ -6,8 +6,8 @@ void main() {
 
 class Tes extends StatelessWidget {
   List<String> menu = ["Soto", "Rawon"];
-
   List<int> harga = [10000, 15000];
+  List<String> porsi = ["1 porsi", "1 porsi"];
 
   List<String> gambar = ["assets/soto.jpg", "assets/rawon.jpg"];
 
@@ -27,6 +27,7 @@ class Tes extends StatelessWidget {
                 Text("No"),
                 Text("Gambar"),
                 Text("Menu"),
+                Text("Porsi"),
                 Text("Harga"),
               ],
             ),
@@ -43,6 +44,7 @@ class Tes extends StatelessWidget {
                     fit: BoxFit.cover,
                   ),
                   Text(menu[i]),
+                  Text(porsi[i]),
                   Text("Rp ${harga[i]}"),
                 ],
               ),
